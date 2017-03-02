@@ -1,1 +1,9 @@
 @import "materialize";
+
+img {
+  width: 100vw;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  overflow: hidden;
+}
