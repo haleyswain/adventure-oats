@@ -3,13 +3,37 @@
   <head>
     <title>Adventure</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="utf-8" />
+    <%= stylesheet_link_tag    'css/main', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <nav>
+    <div id="wrapper">
+
+      <!-- Header -->
+        <header id="header" class="alt">
+          <a href="index.html" class="logo"><strong>Poop</strong> <span>by Haley Swain</span></a>
+          <nav>
+            <a href="#menu">Menu</a>
+          </nav>
+        </header>
+        <nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions vertical">
+							<li><a href="#" class="button special fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+    <!-- <nav>
      <div class="nav-wrapper">
        <a href="/" class="brand-logo">Adventure Oats</a>
        <% if user_signed_in? %>
@@ -25,11 +49,11 @@
            <li><%= link_to 'Login', new_user_session_path %></li>
          </ul>
      </div>
-   </nav>
+   </nav> -->
       <%= flash[:alert] %>
       <%= flash[:notice] %>
       <%= yield %>
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -52,6 +76,6 @@
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
-        </footer>
+        </footer> -->
   </body>
 </html>
