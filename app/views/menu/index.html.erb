@@ -1,0 +1,10 @@
+<nav id="menu">
+  <ul class="links">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "products", products_path %></li>
+  </ul>
+  <ul class="actions vertical">
+    <li><%= link_to 'Sign Up', new_user_registration_path, class:"button special fit" %></li>
+    <li><%= link_to 'Login', new_user_session_path %></li>
+  </ul>
+</nav>

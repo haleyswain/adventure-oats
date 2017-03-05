@@ -6,7 +6,7 @@
     <div class="content">
       <p>Mumblecore listicle banh mi vice twee. Swag bespoke sriracha shabby chic, VHS schlitz skateboard tofu mlkshk freegan bushwick trust fund meggings affogato organic. Semiotics farm-to-table DIY swag typewriter. Crucifix asymmetrical bespoke, normcore ethical waistcoat schlitz raclette. Street art banh mi sriracha tumeric, chia hashtag bitters. Typewriter vape 3 wolf moon, squid next level blog air plant trust fund gochujang disrupt fingerstache. Activated charcoal actually tote bag, portland thundercats hella coloring book.</p>
       <ul class="actions">
-        <li><a href="#one" class="button next scrolly">Get Started</a></li>
+        <li><%= link_to 'make an account', new_user_registration_path, class:"button next scrolly" %></li>
       </ul>
     </div>
   </div>
@@ -29,7 +29,7 @@
 			<img src="images/pic02.jpg" alt="" />
 		</span>
 		<header class="major">
-			<h3><a href="landing.html" class="link">Products</a></h3>
+			<h3><%= link_to 'Products', products_path, class:"link" %></h3>
 			<p>feugiat amet tempus</p>
 		</header>
 	</article>

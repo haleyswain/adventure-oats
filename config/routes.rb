@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :users do
-    resources :products
+  end
+  resources :products do
   end
 end
