@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   end
   resources :products do
   end
+  resources :about do
+  end 
 end
