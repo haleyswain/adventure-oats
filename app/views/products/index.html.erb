@@ -1,9 +1,9 @@
-
+<% @products.each do |product| %>
 <div class="row">
   <div class="col s12 m3">
     <div class="card">
       <div class="card-image">
-        <%= image_tag "pic01.jpg", id: "product1" %>
+        <%= image_tag product.image.url, id: "product1" %>
         <span class="card-title"><h3>Product</span></h3>
       </div>
       <div class="card-content">
@@ -11,53 +11,9 @@
         I am convenient because I require little markup to use effectively.</p>
       </div>
       <div class="card-action">
-        <a href="#">Add to my cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m3">
-    <div class="card">
-      <div class="card-image">
-        <%= image_tag "pic01.jpg", id: "product1" %>
-        <span class="card-title"><h3>Product</span></h3>
-      </div>
-      <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-      <div class="card-action">
-        <a href="#">Add to my cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m3">
-    <div class="card">
-      <div class="card-image">
-        <%= image_tag "pic01.jpg", id: "product1" %>
-        <span class="card-title"><h3>Product</span></h3>
-      </div>
-      <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-      <div class="card-action">
-        <a href="#">Add to my cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m3">
-    <div class="card">
-      <div class="card-image">
-        <%= image_tag "pic01.jpg", id: "product1" %>
-        <span class="card-title"><h3>Product</span></h3>
-      </div>
-      <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively.</p>
-      </div>
-      <div class="card-action">
-        <a href="#">Add to my cart</a>
+        <%= link_to "View this product", product_path(product) %>
       </div>
     </div>
   </div>
 </div>
+<% end %>

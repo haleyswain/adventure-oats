@@ -16,3 +16,22 @@
 h3 {
   color: black;
 }
+.round-image-50 {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+#product-photo {
+  max-width: 300px;
+  max-height: 300px;
+}
+.product-info {
+  text-align: center;
+}
