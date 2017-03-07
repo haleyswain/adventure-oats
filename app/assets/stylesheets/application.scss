@@ -3,10 +3,11 @@
 .products {
   font-size: 84px;
 }
-#otto {
-  max-width: 500px;
-  max-height: 400px;
+#about-person {
+  max-width: 300px;
+  max-height: 300px;
 }
+
 #otto-text {
   float: right;
 }
@@ -33,5 +34,8 @@ h3 {
   max-height: 300px;
 }
 .product-info {
+  text-align: center;
+}
+.col {
   text-align: center;
 }
