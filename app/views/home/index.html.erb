@@ -1,7 +1,6 @@
-<br>
 <section id="banner" class="major">
   <div class="inner">
-    <header class="major">
+    <header id="adventureheader">
       <h1>Adventure Oats</h1>
     </header>
     <div class="content">
@@ -17,17 +16,17 @@
 <!-- One -->
 <section id="one" class="tiles">
 	<article>
-		<span class="image">
-      <img src="../../assets/images/pic01.jpg" alt="" />
+		<span class="indexbox">
+      <%= image_tag "https://images.pexels.com/photos/196464/pexels-photo-196464.jpeg?w=940&h=650&auto=compress&cs=tinysrgb", class: "images" %>
 		</span>
 		<header class="major">
-			<h3><%= link_to 'About', about_index_path, class:"link" %></h3>
-			<p>Check out our team</p>
+      <h3><%= link_to 'About', about_index_path, class:"link" %></h3>
+      <p>Check out our team</p>
 		</header>
 	</article>
 	<article>
-		<span class="image">
-			<img src="" alt="" />
+		<span class="indexbox">
+      <%= image_tag "https://images.pexels.com/photos/216951/pexels-photo-216951.jpeg?w=940&h=650&auto=compress&cs=tinysrgb", class: "images" %>
 		</span>
 		<header class="major">
 			<h3><%= link_to 'Products', products_path, class:"link" %></h3>
@@ -35,17 +34,16 @@
 		</header>
 	</article>
 	<article>
-		<span class="image">
-			<img src="" alt="" />
-		</span>
+		<span class="indexbox">
+      <%= image_tag "https://images.pexels.com/photos/297642/pexels-photo-297642.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb", class: "images" %>		</span>
 		<header class="major">
 			<h3><a href="landing.html" class="link">Adventures</a></h3>
 			<p>Lorem etiam nullam</p>
 		</header>
 	</article>
 	<article>
-		<span class="image">
-			<img src="" alt="" />
+		<span class="indexbox">
+      <%= image_tag "https://images.pexels.com/photos/239323/pexels-photo-239323.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb", class: "images" %>
 		</span>
 		<header class="major">
 			<h3><a href="landing.html" class="link">Newsletter</a></h3>

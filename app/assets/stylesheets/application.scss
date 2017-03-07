@@ -39,3 +39,30 @@ h3 {
 .col {
   text-align: center;
 }
+.images, .indexbox {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+
+}
+.tiles article {
+  padding: 0px !important;
+}
+header {
+  position: absolute !important;
+  right: 10px !important;
+}
+
+.major {
+  padding-right: 5%;
+}
+#adventureheader {
+  position: relative !important;
+}
+
+.row .team-img-circle {
+  border-radius: 50% !important;
+}
+.team-text {
+  text-align: center;
+}

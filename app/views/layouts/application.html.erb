@@ -19,8 +19,8 @@
         <header id="header" class="alt">
           <strong><%= link_to "Home", root_path %></strong>
           <strong><%= link_to 'Log-out', destroy_user_session_path, method: :delete %></strong>
-          <%= image_tag current_user.avatar.url, class: "round-image-50" %>
-
+          <% if current_user %>
+          <% end %>
           <!-- <nav>
             <%= link_to "Menu" %>
           </nav> -->
