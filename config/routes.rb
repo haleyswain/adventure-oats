@@ -3,10 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   root "home#index"
 
-  resources :users do
-  end
-  resources :products do
-  end
-  resources :about do
-  end 
+  resources :users
+  resources :products
+  resources :about
+  resources :adventures
+
 end

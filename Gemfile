@@ -31,6 +31,10 @@ gem 'devise'
 gem 'materialize-sass'
 gem 'rails_admin', '~> 1.0'
 gem "paperclip", "~> 5.0.0"
+gem 'instagram'
+gem 'httparty'
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
