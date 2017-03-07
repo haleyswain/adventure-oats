@@ -11,7 +11,7 @@
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
-		padding: 1%;
+		padding: 0%;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
@@ -3407,7 +3407,7 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("https://images.pexels.com/photos/132983/pexels-photo-132983.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+		background-image: url("https://images.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3431,7 +3431,7 @@
 			-moz-transition: opacity 2.5s ease;
 			-webkit-transition: opacity 2.5s ease;
 			-ms-transition: opacity 2.5s ease;
-			transition: opacity 2.5s ease;
+			transition: opacity 2.5s ease !important;
 			-moz-transition-delay: 0.75s;
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
@@ -3445,7 +3445,7 @@
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.77;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3463,7 +3463,7 @@
 			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
 			padding: 0 !important;
 			position: relative;
-			z-index: 2;
+			z-index: 4;
 		}
 
 			#banner > .inner .image {

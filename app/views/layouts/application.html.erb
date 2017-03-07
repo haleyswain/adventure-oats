@@ -16,85 +16,14 @@
   <body>
     <div id="wrapper">
       <!-- Header -->
-        <header id="header" class="alt">
-          <strong><%= link_to "Home", root_path %></strong>
-          <strong><%= link_to 'Log-out', destroy_user_session_path, method: :delete %></strong>
-          <% if current_user %>
-          <% end %>
-          <!-- <nav>
-            <%= link_to "Menu" %>
-          </nav> -->
-        </header>
-        <br>
-        <br>
-
-        <!-- <nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions vertical">
-              <li><%= link_to 'Sign Up', new_user_registration_path, class:"button special fit" %></li>
-              <li><%= link_to 'Login', new_user_session_path %></li>
-						</ul>
-					</nav> -->
-    <!-- <nav>
-  #    <div class="nav-wrapper">
-  #      <a href="/" class="brand-logo">Adventure Oats</a>
-  #      <% if user_signed_in? %>
-  #        <ul id="nav-mobile" class="right hide-on-med-and-down">
-  #          Logged in as <%= current_user.email %>
-  #          <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
-  #          <li><%= link_to 'Log-out', destroy_user_session_path, method: :delete %></li>
-  #         <% end %>
-  #       </ul>
-  #      <% else %>
-  #        <ul id="nav-mobile" class="right hide-on-med-and-down">
-  #          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-  #          <li><%= link_to 'Login', new_user_session_path %></li>
-  #        </ul>
-  #    </div>
-   </nav> -->
       <%= flash[:alert] %>
       <%= flash[:notice] %>
       <%= yield %>
-    <!-- <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
-  <footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<! <li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li> -->
+      <footer id="footer" class="alt">
+        <strong><%= link_to "Home", root_path %></strong>
+        <strong><%= link_to 'Log-out', destroy_user_session_path %></strong>
+        <% if current_user %>
+        <% end %>
           <% if user_signed_in? %>
             Logged in as <%= current_user.email %>
           <%= link_to 'Edit Profile', edit_user_registration_path %>
