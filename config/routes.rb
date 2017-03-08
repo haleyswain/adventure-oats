@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   resources :products
   resources :about
   resources :adventures
+  resources :contact
 
 end

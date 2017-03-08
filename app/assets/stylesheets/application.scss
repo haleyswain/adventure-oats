@@ -83,42 +83,40 @@ header {
     position: relative;
   }
 }
-.caption {
-  position: relative;
-  width: 300px;
-  top: -300px;
-  padding: 0 25px;
-  height: 300px;
-  display: none;
-  background-color: rgba(0,0,0, .5);
-  color: red;
-  animation-name: slideUp;
-  animation-duration: .25s;
-  animation-timing-duration: ease-out;
-
+.team-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ .team-img-circle {
+   max-width: 300px;
+   max-height: 300px;
+   position: relative;
+ }
 }
 .gallery {
-  height: 300px;
-  width: 300px;
-  img {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.photo-wrap {
+  width: 50%;
+   img {
+  height: 300px !important;
+  width: 300px !important;
   position: relative;
-  top: 0;
-  height: 300px;
-  overflow: hidden;
-  margin: 25px;
+  margin: 5%;
+  float: left;
+}
+}
+.caption {
+  text-align: center;
+  position: relative;
+  padding-top: 8%;
+  color: navy;
+}
+.photo-wrap {
+  width: 800px;
+  background-color: white;
 }
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(+100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+
+
+.contactform {
+  text-align: center !important;
 }

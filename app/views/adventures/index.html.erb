@@ -2,9 +2,9 @@
   <h1 class = "major"><%= @user.username %>'s instagram feed</h1>
     <div class='row'>
       <% @recent_media_items.each do |media| %>
-        <div class="photo-wrap">
+      <div class="photo-wrap">
           <div class="gallery">
-            <img src="<%= media.images.standard_resolution.url%>">
+            <img src="<%= media.images.standard_resolution.url%> ">
           </div>
             <div class="caption">
               <%= media.caption.text %>

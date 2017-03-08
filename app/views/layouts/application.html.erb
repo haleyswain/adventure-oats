@@ -5,31 +5,24 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
     <meta charset="utf-8" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'css/main', media: 'all', 'data-turbolinks-track': 'reload' %>
-
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%- javascript_include_tag 'main', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div id="wrapper">
-      <!-- Header -->
       <%= flash[:alert] %>
       <%= flash[:notice] %>
       <%= yield %>
       <footer id="footer" class="alt">
         <div class="inner">
           <ul class="icons">
-          <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="http://www.twitter.com" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="http://www.facebook.com" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/adventure_oats/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
             <strong><%= link_to "Home", root_path %></strong>
             <strong><%= link_to 'Log-out', destroy_user_session_path %></strong>
