@@ -1,0 +1,7 @@
+
+<%= form_for @review, url: product_reviews_path, html: { multipart: true } do |f| %>
+  <h5>content</h5>
+  <%= f.text_field :content %>
+  <%= f.hidden_field :author, :value => current_user.email %>
+  <%= f.submit %>
+<% end %>

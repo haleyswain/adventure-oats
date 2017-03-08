@@ -13,6 +13,6 @@ class Product < ActiveRecord::Base
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
   attr_accessor :delete_image
   before_validation { self.image.clear if self.delete_image == '1' }
-  belongs_to :user
 
+  has_many :reviews
 end

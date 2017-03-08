@@ -1,4 +1,5 @@
 <div class="container">
+  <strong><%= link_to "Home", root_path %></strong>
   <h1 class = "major"><%= @user.username %>'s instagram feed</h1>
     <div class='row'>
       <% @recent_media_items.each do |media| %>

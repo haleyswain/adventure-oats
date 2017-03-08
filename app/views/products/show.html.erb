@@ -1,12 +1,27 @@
+<div class='container'>
+  <strong><%= link_to "Home", root_path %></strong>
+  <div class = "product-info">
+  <div class='box'>
+  <%= image_tag(@product.image.url, id:'product-photo') %>
+    <ul>
+      <li><%= @product.title %></li>
+      <li><%= @product.size %> Ounces</li>
+      <li><%= @product.flavor %></li>
+      <li><%= @product.description %></li>
+      <li>$<%= @product.price %></li>
+      <li><%= @product.diet %></li>
+    </ul>
+  </div>
+    <hr class='line'>
 
-<div class = "product-info">
-<%= image_tag(@product.image.url, id:'product-photo') %>
-  <ul>
-    <li><%= @product.title %></li>
-    <li><%= @product.size %></li>
-    <li><%= @product.flavor %></li>
-    <li><%= @product.description %></li>
-    <li><%= @product.price %></li>
-    <li><%= @product.diet %></li>
-  </ul>
+    <h3>Reviews</h3>
+        <% @reviews.each do |review| %>
+          <%= review.content %><br>
+          Author: <%= current_user.email %>
+          <hr>
+        <% end %>
+      <% if user_signed_in? %>
+        <p><%= link_to "Leave a Comment About This Product", new_product_review_path(@product) %>
+      <% end %>
+  </div>
 </div>

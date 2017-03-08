@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :users
-  resources :products
+  resources :products do
+    resources :reviews
+  end
+
   resources :about
   resources :adventures
   resources :contact
