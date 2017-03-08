@@ -6,5 +6,4 @@ class AdventuresController < ApplicationController
      @user = client.user
      @recent_media_items = client.user_recent_media
   end
-
 end

@@ -1,8 +1,20 @@
-
-
-<div class="adventure-image">
-  <h1><%= @user.username %> feed</h1>
-    <% @recent_media_items.each do |media| %>
-    <img src="<%= media.images.thumbnail.url%>">
-  <% end%>
+<div class="container">
+  <h1 class = "major"><%= @user.username %>'s instagram feed</h1>
+    <div class='row'>
+      <% @recent_media_items.each do |media| %>
+        <div class="photo-wrap">
+          <div class="gallery">
+            <img src="<%= media.images.standard_resolution.url%>">
+          </div>
+            <div class="caption">
+              <%= media.caption.text %>
+            <% if media.location == nil %>
+            <p>The idiots who took this picture didn't tag a location</p>
+            <% else %>
+              <%= media.location.name %>
+              <% end %>
+          </div>
+        </div>
+      <% end %>
+  </div>
 </div>

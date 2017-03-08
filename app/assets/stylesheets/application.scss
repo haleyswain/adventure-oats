@@ -17,6 +17,10 @@
 h3 {
   color: black;
 }
+.content {
+  text-align: center;
+  font-size: 24px !important;
+}
 .round-image-50 {
     background-color: white;
     border: 1px solid #d9d9d9;
@@ -62,6 +66,8 @@ header {
 
 .row .team-img-circle {
   border-radius: 50% !important;
+  max-width: 50%;
+  max-height: 50%;
 }
 .team-text {
   text-align: center;
@@ -75,5 +81,44 @@ header {
     max-width: 300px;
     max-height: 300px;
     position: relative;
+  }
+}
+.caption {
+  position: relative;
+  width: 300px;
+  top: -300px;
+  padding: 0 25px;
+  height: 300px;
+  display: none;
+  background-color: rgba(0,0,0, .5);
+  color: red;
+  animation-name: slideUp;
+  animation-duration: .25s;
+  animation-timing-duration: ease-out;
+
+}
+.gallery {
+  height: 300px;
+  width: 300px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.photo-wrap {
+  position: relative;
+  top: 0;
+  height: 300px;
+  overflow: hidden;
+  margin: 25px;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(+100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
