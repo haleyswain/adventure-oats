@@ -51,6 +51,7 @@ group :development, :test do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'factory_girl'
+  gem 'simplecov', :require => false, :group => :test
 
 end
 
