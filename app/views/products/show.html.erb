@@ -18,7 +18,7 @@
         <% @reviews.each do |review| %>
           <%= review.content %><br>
           <% if current_user %>
-          Author: <%= current_user.email %>
+          Author: <%= review.author %>
           <% else %>
           <p>Sign in to see who wrote this review!</p>
           <% end %>

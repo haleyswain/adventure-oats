@@ -1,6 +1,10 @@
 class ReviewsController < ApplicationController
   before_action :authenticate_user!
 
+  def index
+    @reviews = Review.all
+    @product = Product.find(params[:product_id])
+  end
   def new
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new
