@@ -17,7 +17,11 @@
     <h3>Reviews</h3>
         <% @reviews.each do |review| %>
           <%= review.content %><br>
+          <% if current_user %>
           Author: <%= current_user.email %>
+          <% else %>
+          <p>Sign in to see who wrote this review!</p>
+          <% end %>
           <hr>
         <% end %>
       <% if user_signed_in? %>

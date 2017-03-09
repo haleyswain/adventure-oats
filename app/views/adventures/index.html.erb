@@ -10,9 +10,11 @@
             <div class="caption">
               <%= media.caption.text %>
             <% if media.location == nil %>
-            <p>The idiots who took this picture didn't tag a location</p>
+            <p>No location was tagged for this photo</p>
             <% else %>
+            <div class='location'>
               <%= media.location.name %>
+            </div>
               <% end %>
           </div>
         </div>
