@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-product1 = Product.create([{ title: 'Cranberry Citrus', image: File.new('https://images.pexels.com/photos/3672/food-fruits-cereals-breakfast.jpg?w=940&h=650&auto=compress&cs=tinysrgb'), flavor: 'Cranberry Citrus', size: '12 oz', price: 5, description: 'A super yummy combination of Cranberry and Citrus.'}])
+product1 = Product.create([{ title: 'Cranberry Citrus', image: File.new('app/assets/images/oatmeal2.jpeg'), flavor: 'Cranberry Citrus', size: '12 oz', price: 5, description: 'A super yummy combination of Cranberry and Citrus.'}])
 
-product2 = Product.create([{ title: 'Apple Cinnamon Raisin', image: File.new('https://images.pexels.com/photos/3672/food-fruits-cereals-breakfast.jpg?w=940&h=650&auto=compress&cs=tinysrgb'), flavor: 'Cranberry Citrus', size: '12 oz', price: 5, description: 'A super yummy combination of Cranberry and Citrus.'}])
+product2 = Product.create([{ title: 'Apple Cinnamon Raisin', image: File.new('app/assets/images/oatmeal2.jpeg'), flavor: 'Cranberry Citrus', size: '12 oz', price: 5, description: 'A super yummy combination of Cranberry and Citrus.'}])
 
-product3 = Product.create([{ title: 'Blueberry Coconut', image: File.new('https://images.pexels.com/photos/3672/food-fruits-cereals-breakfast.jpg?w=940&h=650&auto=compress&cs=tinysrgb'), flavor: 'Cranberry Citrus', size: '12 oz', price: 5, description: 'A super yummy combination of Cranberry and Citrus.'}])
+product3 = Product.create([{ title: 'Blueberry Coconut', image: File.new('app/assets/images/oatmeal2.jpeg'), flavor: 'Cranberry Citrus', size: '12 oz', price: 5, description: 'A super yummy combination of Cranberry and Citrus.'}])
