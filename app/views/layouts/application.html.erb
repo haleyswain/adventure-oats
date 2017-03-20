@@ -26,7 +26,6 @@
 						<li><a href="https://www.instagram.com/adventure_oats/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
             <strong><%= link_to "Home", root_path %></strong>
-            <strong><%= link_to 'Log-out', destroy_user_session_path %></strong>
           <% if user_signed_in? %>
             Logged in as <%= current_user.email %>
           <%= link_to 'Edit Profile', edit_user_registration_path %>
