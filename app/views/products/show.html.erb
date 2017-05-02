@@ -1,5 +1,9 @@
 <div class='container'>
+  <i class="fa fa-home" aria-hidden="true"></i>
   <strong><%= link_to "Home", root_path %></strong>
+  <br>
+  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+  <strong><%= link_to "Back to Products", products_path %></strong>
   <div class = "product-info">
   <div class='box'>
   <%= image_tag(@product.image.url, id:'product-photo') %>

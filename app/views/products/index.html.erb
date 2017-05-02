@@ -1,11 +1,30 @@
 <div class='container'>
+  <i class="fa fa-home" aria-hidden="true"></i>
   <strong><%= link_to "Home", root_path %></strong>
-  <% @products.each do |product| %>
+  <br>
   <div class="row">
-    <div class="col s6 offset-s3 valign">
+    <% @products.first(@products.length/2).each do |product| %>
+  <div class="col m6">
+        <div class="card">
+          <div class="card-image">
+            <%= image_tag product.image.url, id: "product-photo" %>
+            <span class="card-title"><h3>Product</span></h3>
+          </div>
+          <div class="card-content">
+            <%= product.title %>
+          </div>
+          <div class="card-action">
+            <%= link_to "View this product", product_path(product) %>
+          </div>
+      </div>
+    </div>
+    <% end %>
+
+    <% @products.last(@products.length/2 + @products.length % 2).each do |product| %>
+<div class="col m6">
       <div class="card">
         <div class="card-image">
-          <%= image_tag product.image.url, id: "product1" %>
+          <%= image_tag product.image.url, id: "product-photo" %>
           <span class="card-title"><h3>Product</span></h3>
         </div>
         <div class="card-content">
@@ -16,6 +35,6 @@
         </div>
       </div>
     </div>
+    <% end %>
   </div>
-  <% end %>
 </div>
